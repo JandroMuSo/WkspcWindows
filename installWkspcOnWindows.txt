@@ -1,0 +1,33 @@
+#Paso1 - Instalar Scoop
+#Damos politicas de instalar remote signed en nuestro usuario.
+Set-ExecutionPolicy RemoteSigned -scope CurrentUser
+#Instalamos Scoop
+iwr -useb get.scoop.sh | iex
+#Instalamos sudo
+scoop install sudo
+
+#Paso2 - Instalar Scala
+scoop install git
+scoop bucket add java
+scoop install openjdk8-redhat
+scoop install scala
+scoop install sbt
+#Añadir credentials to .credentials in C:\Users\jandr\scoop\apps\sbt\1.5.5
+
+#Paso3 - Instalar IDEA
+scoop bucket add JetBrains
+scoop install IntelliJ-IDEA-Ultimate
+
+#Paso4 - Instalar Node
+scoop install nodejs-lts #This will install npm as well 
+
+#Paso5 - Instalar python3
+scoop install python
+
+#Paso6 - Instalar mysql
+scoop install mysql
+sudo mysqld --install MySQL --defaults-file="C:\Users\jandr\scoop\apps\mysql\current\my.ini"
+
+#Paso7 - Instalar docker y docker-compose
+scoop install docker
+scoop install docker-compose
