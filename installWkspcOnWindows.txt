@@ -26,6 +26,9 @@ scoop install python
 
 #Paso6 - Instalar mysql
 scoop install mysql
+sudo mysqld 
+#Ejecutamos el mysqld con el --init-file con el contenido siguiente: ALTER USER 'root'@'localhost' IDENTIFIED BY 'Hedyla123----'; Esto nos permite reiniciar la pass de root.
+mysqld --init-file=C:\\mysql-init.txt
 sudo mysqld --install MySQL --defaults-file="C:\Users\jandr\scoop\apps\mysql\current\my.ini"
 scoop install mysql-workbench
 
