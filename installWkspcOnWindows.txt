@@ -27,6 +27,7 @@ scoop install python
 #Paso6 - Instalar mysql
 scoop install mysql
 sudo mysqld --install MySQL --defaults-file="C:\Users\jandr\scoop\apps\mysql\current\my.ini"
+scoop install mysql-workbench
 
 #Paso7 - Instalar docker y docker-compose
 scoop install docker
