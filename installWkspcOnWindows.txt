@@ -20,6 +20,7 @@ scoop install IntelliJ-IDEA-Ultimate
 
 #Paso4 - Instalar Node
 scoop install nodejs-lts #This will install npm as well 
+#add .npmrc in the userHome
 
 #Paso5 - Instalar python3
 scoop install python
@@ -28,10 +29,22 @@ scoop install python
 scoop install mysql
 sudo mysqld 
 #Ejecutamos el mysqld con el --init-file con el contenido siguiente: ALTER USER 'root'@'localhost' IDENTIFIED BY 'Hedyla123----'; Esto nos permite reiniciar la pass de root.
-mysqld --init-file=C:\\mysql-init.txt
 sudo mysqld --install MySQL --defaults-file="C:\Users\jandr\scoop\apps\mysql\current\my.ini"
+sudo mysqld --init-file=C:\\mysql-init.txt
 scoop install mysql-workbench
 
 #Paso7 - Instalar docker y docker-compose
 scoop install docker
 scoop install docker-compose
+
+#Paso 8 - Instalamos el bucket de extras
+scoop bucket add extras
+
+#Paso 9 - Instalamos postman.
+scoop install postman
+
+#Paso 10 - Instalamos redis
+scoop install redis
+#Add requirepass [password] to redis.windows-service.conf
+redis-server --service-install redis.windows-service.conf --loglevel verbose --service-name redisName
+#You should change the login inside the service to get it running
