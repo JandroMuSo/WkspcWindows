@@ -48,3 +48,6 @@ scoop install redis
 #Add requirepass [password] to redis.windows-service.conf
 redis-server --service-install redis.windows-service.conf --loglevel verbose --service-name redisName
 #You should change the login inside the service to get it running
+
+#Paso 11 - Instalamos terraform
+scoop install terraform
