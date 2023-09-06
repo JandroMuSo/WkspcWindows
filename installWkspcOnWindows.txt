@@ -12,7 +12,7 @@ scoop bucket add java
 scoop install openjdk8-redhat
 scoop install scala
 scoop install sbt
-#Añadir credentials to .credentials in C:\Users\jandr\scoop\apps\sbt\1.5.5
+#Añadir credentials to .credentials in C:\Users\[User]\scoop\apps\sbt\1.5.5
 
 #Paso3 - Instalar IDEA
 scoop bucket add JetBrains
@@ -28,8 +28,8 @@ scoop install python
 #Paso6 - Instalar mysql
 scoop install mysql
 sudo mysqld 
-#Ejecutamos el mysqld con el --init-file con el contenido siguiente: ALTER USER 'root'@'localhost' IDENTIFIED BY 'Hedyla123----'; Esto nos permite reiniciar la pass de root.
-sudo mysqld --install MySQL --defaults-file="C:\Users\jandr\scoop\apps\mysql\current\my.ini"
+#Ejecutamos el mysqld con el --init-file con el contenido siguiente: ALTER USER 'root'@'localhost' IDENTIFIED BY 'Password'; Esto nos permite reiniciar la pass de root.
+sudo mysqld --install MySQL --defaults-file="C:\Users\[User]]\scoop\apps\mysql\current\my.ini"
 sudo mysqld --init-file=C:\\mysql-init.txt
 scoop install mysql-workbench
 
